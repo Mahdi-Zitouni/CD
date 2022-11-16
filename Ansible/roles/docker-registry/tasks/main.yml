@@ -1,0 +1,7 @@
+---
+   - name : connecting to docker hub
+     command : docker login -u dqntero -p 4thoseanimals 
+   - name : adding tag to image 
+     command : docker tag app:latest dqntero/app:latest
+   - name : pushing image to dockerhub
+     command : docker push dqntero/app:latest 
